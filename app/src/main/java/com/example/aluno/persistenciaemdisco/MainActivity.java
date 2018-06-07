@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String[] textoSeparado = valorTextView.split(" ");
         int i = Integer.parseInt(textoSeparado[0]);
 
-        int coloracao = textView.getColor();
+        int coloracao = textView.getCurrentTextColor();
         editor.putInt(COR_KEY, coloracao);
 
         editor.putInt(CONTADOR_KEY, i);
